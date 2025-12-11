@@ -1,0 +1,10 @@
+.venv # virtual environment
+__pycache__ # python cache
+.DS_Store # macos hidden files
+.idea/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.pkl # model file
+*.egg-info/
+*.pkl

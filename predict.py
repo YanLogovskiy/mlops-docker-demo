@@ -1,7 +1,8 @@
-import joblib
 import sys
-from sklearn.datasets import load_iris
+
+import joblib
 import numpy as np
+from sklearn.datasets import load_iris
 
 model = joblib.load("model.pkl")
 

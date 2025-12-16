@@ -28,18 +28,18 @@ jobs:
 
     - name: Install dependencies
       run: |
-        uv sync --extra dev
+        uv sync --locked
+        uv pip install -r tests/requirements.txt
 
     - name: Run tests
       run: |
         uv run pytest tests/ -v --cov=. --cov-report=term-missing
 
-    - name: Check code formatting with black
+    - name: Lint with ruff
       run: |
-        uv run black --check .
+        uv run ruff check .
 
-    - name: Lint with flake8
+    - name: Check code formatting with ruff
       run: |
-        uv run flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        uv run flake8 . --count --exit-zero --max-complexity=10 --max-line-length=120 --statistics
+        uv run ruff format --check .
 

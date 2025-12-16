@@ -3,7 +3,7 @@ import sys
 from sklearn.datasets import load_iris
 import numpy as np
 
-model = joblib.load('model.pkl')
+model = joblib.load("model.pkl")
 
 if len(sys.argv) > 1:
     sample = np.array([float(x) for x in sys.argv[1:]])

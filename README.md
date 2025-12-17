@@ -1,6 +1,8 @@
 # 🚀 MLOps Docker Demo
 
 A modern MLOps demonstration project showcasing machine learning model training with Docker containerization. This project trains a logistic regression model on the classic Iris dataset using scikit-learn.
+## Full CI/CD Pipeline
+[![CI](https://github.com/YanLogovskiy/mlops-docker-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/YanLogovskiy/mlops-docker-demo/actions)
 
 ## 📋 Table of Contents
 
